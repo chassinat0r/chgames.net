@@ -1,0 +1,97 @@
+@font-face {
+    font-family: ZeroThrees;
+    src: url(ZeroThrees.ttf);
+  }
+
+html, body, section {
+    height: 100%;
+}
+
+body {
+    background-color: #009fba;
+    font-family: ZeroThrees;
+    color: #044d56;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+div.header {
+    font-size: 75px;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.header a {
+    color: #044d56;
+    text-decoration: none;
+}
+
+div.body, div.sidebar {
+    border: 5px solid #044d56;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+div.body p, div.sidebar p, div.body h2 {
+    margin: 0;
+}
+
+div.main {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+}
+
+div.sidebar {
+    flex-basis: 250px;
+}
+
+div.body {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+div.footer {
+    margin: 10px 0px 10px;
+    text-align: center;
+}
+
+div.footer p {
+    margin: 0px;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    border: 3px solid #044d56;
+}
+
+li.navbar_item {
+    border-top: 3px solid #044d56;
+    background-color: #009fba;
+}
+
+li.navbar_title {
+    font-weight: bold;
+    background-color: #044d56;
+    color: #009fba;
+}
+
+li.navbar_item a {
+    display: block;
+    color: #044d56;
+    text-decoration: none;
+}
+
+li.navbar_item a:hover {
+    background-color: #03778b;
+    color: #044d56;
+}

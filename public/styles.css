@@ -35,7 +35,12 @@ div.body, div.sidebar {
     border-radius: 10px;
 }
 
-div.body p, div.sidebar p, div.body h2 {
+div.sidebar {
+    height: fit-content;
+    width: 250px;
+}
+
+div.body p, div.sidebar p, div.body h1, div.body h2, div.body h3, div.body ul {
     margin: 0;
 }
 
@@ -48,13 +53,9 @@ div.main {
     flex-grow: 1;
 }
 
-div.sidebar {
-    flex-basis: 250px;
-}
-
 div.body {
     margin-left: 20px;
-    flex-grow: 1;
+    width: calc(100% - 270px);
 }
 
 div.footer {
@@ -125,4 +126,19 @@ div.text_link:hover {
 }
 div.sidebar h3 {
     margin: 5px 0 2px;
+}
+
+br {
+    display: block;
+    content: "";
+    margin-bottom: 5px;
+}
+
+figure {
+    margin: 0px;
+    width: fit-content;
+}
+
+figcaption {
+    text-align: center;
 }
